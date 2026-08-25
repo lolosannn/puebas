@@ -62,8 +62,8 @@ main { overflow: hidden; }
   justify-content: center;
   padding: 12px 22px;
   border-radius: 10px;
-  background: var(--color-cta);
-  border: 1px solid #eee;
+  background: var(--color-accent);
+  border: none;
   color: #fff;
   font-family: var(--font-cta);
   font-weight: 700;
@@ -166,6 +166,11 @@ main { overflow: hidden; }
   background: var(--color-panel);
   padding: 70px 0;
   overflow: hidden;
+}
+.intro__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
 .intro__photo-frame {
   position: absolute;
@@ -479,7 +484,7 @@ main { overflow: hidden; }
   line-height: 1.5;
   color: var(--color-off-white);
 }
-.propuesta__cta { margin-top: 48px; background: var(--color-accent); }
+.propuesta__cta { margin-top: 48px; }
 
 @media (max-width: 760px) {
   .propuesta__panel { flex-direction: column; }
