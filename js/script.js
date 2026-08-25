@@ -16,6 +16,42 @@
   fit();
 })();
 
+// Auto-load real images dropped into /images — replaces each placeholder
+// block (.ph) with the matching photo, matched by its data-asset label.
+document.addEventListener('DOMContentLoaded', function () {
+  var EXTENSIONS = ['jpg', 'jpeg', 'png', 'webp'];
+
+  function slugify(label) {
+    var base = label.split('—')[0].trim();
+    return base
+      .normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+  }
+
+  function tryExtensions(slug, extIndex, onFound) {
+    if (extIndex >= EXTENSIONS.length) return;
+    var url = 'images/' + slug + '.' + EXTENSIONS[extIndex];
+    var img = new Image();
+    img.onload = function () { onFound(url); };
+    img.onerror = function () { tryExtensions(slug, extIndex + 1, onFound); };
+    img.src = url;
+  }
+
+  document.querySelectorAll('.ph[data-asset]').forEach(function (el) {
+    var slug = slugify(el.getAttribute('data-asset'));
+    tryExtensions(slug, 0, function (url) {
+      var img = document.createElement('img');
+      img.src = url;
+      img.alt = '';
+      img.className = el.className;
+      img.style.cssText = el.style.cssText + ';object-fit:cover;display:block;';
+      el.replaceWith(img);
+    });
+  });
+});
+
 // FAQ accordion
 document.addEventListener('DOMContentLoaded', function () {
   var faqItems = document.querySelectorAll('.faq-item');

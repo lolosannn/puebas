@@ -17,26 +17,44 @@ y entrar a `http://localhost:8000`.
 ```
 index.html        Todas las secciones de la página
 css/styles.css     Estilos (colores, tipografías y layout de cada sección)
-js/script.js       Escalado responsive, acordeón de FAQ y feedback del formulario
-assets/images/     Fotos reales (pendiente, ver abajo)
-assets/icons/      Íconos y logo reales (pendiente, ver abajo)
+js/script.js       Escalado responsive, acordeón de FAQ, formulario y carga automática de imágenes
+images/            Acá van todas las fotos e íconos reales
 ```
 
-## Imágenes pendientes
+## Cómo cargar las imágenes (sin tocar código)
 
-Por una restricción de red de este entorno no fue posible descargar automáticamente las imágenes/íconos reales desde Figma. Todas las fotos e íconos están reemplazados temporalmente por bloques con rayas grises con una etiqueta (clase `.ph`) que indica qué imagen va ahí, por ejemplo:
+Todas las fotos e íconos están hoy reemplazados por bloques grises con una etiqueta. El sitio ya viene preparado para detectar automáticamente cualquier imagen que pongas en la carpeta `images/` — solo tenés que guardarla con el **nombre exacto** de la tabla de abajo (podés usar `.jpg`, `.jpeg`, `.png` o `.webp`, con eso alcanza). Apenas la subís y recargás la página, el bloque gris se reemplaza solo por tu foto. No hace falta editar ningún archivo.
 
-```html
-<div class="ph" data-asset="IMG_5733"></div>
-```
+| Nombre de archivo (en `images/`) | Qué imagen va ahí |
+|---|---|
+| `logo-100x100-asado.jpg` | Logo de 100x100 Asado (aparece en el header y el footer) |
+| `instagram.jpg` | Ícono de Instagram |
+| `tiktok.jpg` | Ícono de TikTok |
+| `whatsapp.jpg` | Ícono de WhatsApp |
+| `foto-hero.jpg` | Foto grande de fondo del hero (portada) |
+| `icono-fuego.jpg` | Ícono "Ritual del fuego argentino" |
+| `icono-carne.jpg` | Ícono "Materia prima premium" |
+| `icono-equipo.jpg` | Ícono "Equipo profesional" |
+| `icono-organizacion.jpg` | Ícono "Organización y responsabilidad" |
+| `img-4925.jpg` | Foto de la mesa servida (Propuesta Gastronómica) |
+| `foto-collage-1.jpg` … `foto-collage-12.jpg` | Las 12 fotos del collage de fondo en "Nuestro servicio" |
+| `img-6206.jpg` | Foto chica junto a "Personal & Montaje" (también se reutiliza en la Galería) |
+| `img-5951.jpg` | Foto chica junto a "Personal & Montaje" (también se reutiliza en la Galería) |
+| `img-2043.jpg` | Foto rotada en "Nosotros" |
+| `img-6630.jpg` | Foto rotada en "Nosotros" |
+| `img-8585.jpg` | Foto en "Nosotros" |
+| `gonzalo-hileni.jpg` | Retrato de Gonzalo Hileni |
+| `mapa-patagonia-fondo.jpg` | Imagen de fondo de la sección Presupuesto |
+| `icono-reloj.jpg` | Ícono de "Propuesta personalizada / Te respondemos en 24 hs" |
+| `img-5733.jpg` | Foto de la Galería |
+| `img-5307.jpg` | Foto de la Galería (también se reutiliza en "Comunidad") |
+| `img-8156.jpg` | Foto de la Galería |
+| `img-7930.jpg` | Foto de la Galería |
+| `img-2063.jpg` | Foto de la Galería |
+| `img-6374.jpg` | Foto de la Galería |
+| `img-7972.jpg` | Foto de un referente/cliente |
+| `img-4557.jpg` | Foto de un referente/cliente |
+| `img-6286.jpg` | Foto de un referente/cliente |
+| `img-7458.jpg` | Foto de un referente/cliente |
 
-Para reemplazar una por la imagen real:
-
-1. Exportá la imagen desde Figma (clic derecho sobre la capa → Export) y guardala en `assets/images/` (fotos) o `assets/icons/` (logo e íconos).
-2. Reemplazá el `<div class="ph" ...>` por un `<img>`, por ejemplo:
-
-```html
-<img src="assets/images/IMG_5733.jpg" alt="" class="...">
-```
-
-(mantené las clases que tenía el div para conservar tamaño/posición, y quitá `ph`/`ph-icon`).
+**Tip:** si no tenés claro qué nombre le corresponde a cada foto, abrí `index.html` con el navegador — cada bloque gris muestra su propia etiqueta abajo a la izquierda (por ejemplo "IMG_5733"), que corresponde a la fila de la tabla de arriba.
