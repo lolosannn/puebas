@@ -599,6 +599,8 @@ main { overflow: hidden; }
 .servicio__icon {
   width: 26px;
   height: 26px;
+  object-fit: contain !important;
+  background: transparent !important;
 }
 .servicio__note {
   align-self: end;
