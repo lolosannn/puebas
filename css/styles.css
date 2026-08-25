@@ -207,11 +207,11 @@ main { overflow: hidden; }
 }
 .intro__photo-tape {
   position: absolute;
-  top: -22px;
+  top: -48px;
   left: 50%;
   z-index: 2;
-  width: 150px;
-  height: 76px;
+  width: 240px;
+  height: 120px;
   transform: translateX(-50%) rotate(-2deg);
   object-fit: contain !important;
   background: transparent !important;
