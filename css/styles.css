@@ -162,7 +162,7 @@ main { overflow: hidden; }
 /* ===== Más que un asado ===== */
 .intro {
   position: relative;
-  min-height: 620px;
+  min-height: 771px;
   background: var(--color-panel);
   padding: 70px 0;
   overflow: hidden;
@@ -170,14 +170,14 @@ main { overflow: hidden; }
 .intro__photo-frame {
   position: absolute;
   right: 90px;
-  top: 40px;
-  width: 380px;
-  height: 300px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0.5deg);
+  width: 620px;
+  height: 610px;
   background: #fff;
-  padding: 8px 8px 24px;
+  padding: 10px 10px 28px;
   border-radius: 4px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-  transform: rotate(0.5deg);
   z-index: 0;
 }
 .intro__photo {
