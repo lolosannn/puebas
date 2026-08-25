@@ -254,16 +254,24 @@ main { overflow: hidden; }
   color: var(--color-off-white);
 }
 .propuesta__title strong { font-weight: 700; }
-.propuesta__card {
+.propuesta__frame {
   position: relative;
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
-  color: var(--color-panel);
+  padding: 28px;
 }
 .propuesta__bg {
   position: absolute;
   inset: 0;
   z-index: 0;
+}
+.propuesta__card {
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ece3d5;
+  color: var(--color-panel);
 }
 .propuesta__tabs {
   position: relative;
