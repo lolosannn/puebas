@@ -269,7 +269,7 @@ main { overflow: hidden; }
 .propuesta__card {
   position: relative;
   z-index: 1;
-  border-radius: 12px;
+  border-radius: 0;
   overflow: hidden;
   background: #ece3d5;
   color: var(--color-panel);
