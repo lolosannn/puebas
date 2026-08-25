@@ -242,7 +242,14 @@ main { overflow: hidden; }
   position: relative;
   padding: 100px 0 120px;
   background: var(--color-bg-dark);
+  overflow: hidden;
 }
+.propuesta__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.propuesta__inner { position: relative; z-index: 1; }
 .propuesta__title {
   margin: 12px 0 60px;
   max-width: 770px;
@@ -257,13 +264,7 @@ main { overflow: hidden; }
 .propuesta__frame {
   position: relative;
   border-radius: 20px;
-  overflow: hidden;
   padding: 28px;
-}
-.propuesta__bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
 }
 .propuesta__card {
   position: relative;
