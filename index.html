@@ -54,9 +54,14 @@
     </div>
   </section>
 
+  <p class="hero__script-caption">El asado argentino,<br>una tradición que<br>nos une.</p>
+
   <section class="intro" id="mas-que-asado">
+    <div class="ph intro__bg" data-asset="fondo mas que un asado"></div>
     <div class="intro__photo-frame">
+      <div class="ph intro__photo-tape" data-asset="washi tape"></div>
       <div class="ph intro__photo" data-asset="IMG_6411"></div>
+      <div class="ph ph-icon intro__photo-whatsapp" data-asset="whatsapp badge"></div>
     </div>
     <div class="section-inner intro__inner">
       <h2 class="intro__title">Más que un asado, <strong>Una experiencia</strong></h2>
@@ -100,7 +105,10 @@
         </div>
 
         <div class="propuesta__panel active" data-panel="completo">
-          <div class="ph propuesta__photo" data-asset="IMG_4925 — mesa servida"></div>
+          <div class="propuesta__photo-col">
+            <div class="ph propuesta__photo" data-asset="IMG_4925 — mesa servida"></div>
+            <p class="propuesta__note">Una propuesta que respeta el <strong>ritual tradicional del asado argentino.</strong> El fuego como protagonista. Técnica, tiempo y producto en su máxima expresión.</p>
+          </div>
 
           <div class="propuesta__content">
             <div class="ph propuesta__flag" data-asset="bandera argentina"></div>
@@ -137,7 +145,6 @@
               </div>
             </div>
 
-            <p class="propuesta__note">Una propuesta que respeta el <strong>ritual tradicional del asado argentino.</strong> El fuego como protagonista. Técnica, tiempo y producto en su máxima expresión.</p>
             <p class="propuesta__quote">Cocción a leña de quebracho, respetando el tiempo y la esencia del fuego.</p>
             <p class="propuesta__disclaimer">*Incluye pan figacita y miñón, leña seleccionada (quebracho colorado, blanco y espinillo) y materia prima de primera calidad. No incluye pan para celíacos.</p>
           </div>
@@ -224,52 +231,50 @@
   </section>
 
   <section class="servicio" id="nuestro-servicio">
-    <div class="servicio__collage">
-      <div class="ph" data-asset="IMG_6807"></div>
-      <div class="ph" data-asset="IMG_7225"></div>
-      <div class="ph" data-asset="IMG_8087"></div>
-      <div class="ph" data-asset="foto collage 4"></div>
-      <div class="ph" data-asset="foto collage 5"></div>
-      <div class="ph" data-asset="foto collage 6"></div>
-      <div class="ph" data-asset="foto collage 7"></div>
-      <div class="ph" data-asset="foto collage 8"></div>
-      <div class="ph" data-asset="foto collage 9"></div>
-      <div class="ph" data-asset="foto collage 10"></div>
-      <div class="ph" data-asset="foto collage 11"></div>
-      <div class="ph" data-asset="foto collage 12"></div>
-    </div>
+    <div class="ph servicio__collage" data-asset="servicio collage"></div>
 
     <div class="section-inner">
       <div class="servicio__card">
-        <p class="eyebrow">/ Nuestro servicio</p>
-        <h2 class="servicio__title">¿Qué incluye nuestro servicio?</h2>
+        <div class="ph ph-icon servicio__seal" data-asset="sello argentina"></div>
 
-        <div class="servicio__columns">
-          <ol class="servicio__list">
-            <li>Traslado, armado y puesta a punto de parrillas y estaciones de trabajo</li>
-            <li>Leña de espinillo, quebracho blanco y colorado, junto con carbón seleccionado.</li>
-            <li>Pan para acompañar el servicio de carnes</li>
-            <li>Selección exclusiva de carnes y achuras de primera calidad</li>
-          </ol>
+        <div class="servicio__main">
+          <p class="eyebrow">/ Nuestro servicio</p>
+          <h2 class="servicio__title">Personal &amp; Montaje</h2>
 
-          <div class="servicio__personal">
-            <h3>Personal &amp; Montaje</h3>
-            <div class="servicio__personal-photos">
-              <div class="ph" data-asset="IMG_6206"></div>
-              <div class="ph" data-asset="IMG_5951"></div>
+          <div class="servicio__box">
+            <div class="servicio__grid">
+              <div class="servicio__item">
+                <div class="ph ph-icon servicio__icon" data-asset="icono chef"></div>
+                <p>Chefs y parrilleros especializados</p>
+              </div>
+              <div class="servicio__item">
+                <div class="ph ph-icon servicio__icon" data-asset="icono montaje"></div>
+                <p>Montaje integral del evento</p>
+              </div>
+              <div class="servicio__item">
+                <div class="ph ph-icon servicio__icon" data-asset="icono coordinacion"></div>
+                <p>Coordinación y operación durante todo el servicio</p>
+              </div>
+              <div class="servicio__item">
+                <div class="ph ph-icon servicio__icon" data-asset="icono camareros"></div>
+                <p>Camareros para atención personalizada</p>
+              </div>
+              <div class="servicio__item">
+                <div class="ph ph-icon servicio__icon" data-asset="icono limpieza"></div>
+                <p>Limpieza final del espacio</p>
+              </div>
+              <p class="servicio__note">Eventos de<br>todo tipo</p>
             </div>
-            <ul>
-              <li>Chefs y parrilleros especializados</li>
-              <li>Coordinación y operación durante todo el servicio</li>
-              <li>Montaje integral del evento</li>
-              <li>Camareros para atención personalizada</li>
-              <li>Limpieza final del espacio</li>
-            </ul>
-            <p class="servicio__closing">Eventos de todo tipo</p>
           </div>
+
+          <a href="#presupuesto" class="btn servicio__cta">Solicitar presupuesto</a>
         </div>
 
-        <p class="servicio__note">Trabajamos exclusivamente con materia prima de primera calidad, garantizando sabor, frescura y excelencia en cada servicio.</p>
+        <div class="servicio__photos">
+          <div class="ph servicio__photo-tape" data-asset="washi tape"></div>
+          <div class="ph servicio__photo servicio__photo--back" data-asset="foto venue personal y montaje"></div>
+          <div class="ph servicio__photo servicio__photo--front" data-asset="foto chef personal y montaje"></div>
+        </div>
       </div>
     </div>
   </section>
