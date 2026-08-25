@@ -128,6 +128,20 @@ main { overflow: hidden; }
   transform: rotate(-9.69deg);
   line-height: 1.6;
 }
+.hero__script-caption {
+  position: absolute;
+  z-index: 10;
+  top: 690px;
+  right: 130px;
+  width: 320px;
+  margin: 0;
+  font-family: var(--font-script);
+  font-size: 26px;
+  line-height: 1.5;
+  text-align: right;
+  color: #fff;
+  transform: rotate(-6deg);
+}
 .hero__title {
   position: absolute;
   top: 308px;
