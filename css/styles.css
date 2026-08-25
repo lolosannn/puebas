@@ -608,7 +608,7 @@ main { overflow: hidden; }
   font-family: var(--font-script);
   font-size: 20px;
   line-height: 1.3;
-  color: var(--color-accent);
+  color: #000;
   text-align: right;
 }
 .servicio__cta { margin-top: 32px; }
