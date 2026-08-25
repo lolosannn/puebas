@@ -647,17 +647,6 @@ main { overflow: hidden; }
   background: transparent !important;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
 }
-.servicio__photos-accent {
-  position: absolute;
-  top: 100px;
-  left: -14px;
-  z-index: 2;
-  width: 18px;
-  height: 24px;
-  background: var(--color-accent);
-  border-radius: 60% 40% 65% 35% / 55% 65% 35% 45%;
-  transform: rotate(-20deg);
-}
 @media (max-width: 900px) {
   .servicio__card { flex-direction: column; }
   .servicio__photos { flex-basis: auto; height: 340px; }
