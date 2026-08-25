@@ -330,8 +330,22 @@ main { overflow: hidden; }
   position: absolute;
   top: -4px;
   right: 0;
-  font-size: 22px;
-  line-height: 1;
+  width: 56px;
+  height: 37px;
+  border-radius: 2px;
+}
+.propuesta__flag--bottom {
+  top: auto;
+  bottom: 0;
+  right: 0;
+}
+.propuesta__seal-corner {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
 }
 .propuesta__photos {
   flex: 0 0 380px;
@@ -364,11 +378,31 @@ main { overflow: hidden; }
   color: var(--color-panel);
 }
 .propuesta__badge {
-  display: inline-block;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  min-height: 82px;
+  padding: 10px 24px;
+  margin-bottom: 10px;
+}
+.propuesta__badge .washi-tape {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  transform: rotate(-1.5deg);
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+}
+.propuesta__badge-text {
+  position: relative;
+  z-index: 1;
   font-family: var(--font-script);
   font-size: 26px;
   color: var(--color-accent);
-  margin-bottom: 10px;
 }
 .propuesta__menu {
   display: grid;
@@ -397,6 +431,7 @@ main { overflow: hidden; }
 }
 .propuesta__note strong { color: var(--color-panel); }
 .propuesta__quote {
+  max-width: 380px;
   margin: 20px 0 8px;
   font-family: var(--font-script);
   font-size: 20px;
@@ -404,6 +439,7 @@ main { overflow: hidden; }
   letter-spacing: 0.8px;
 }
 .propuesta__disclaimer {
+  max-width: 380px;
   margin: 0;
   font-family: var(--font-body);
   font-style: italic;
