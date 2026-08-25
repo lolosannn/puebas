@@ -545,6 +545,7 @@ main { overflow: hidden; }
   inset: 0;
   width: 100%;
   height: 100%;
+  filter: brightness(0.5);
 }
 .servicio__card {
   position: relative;
@@ -554,7 +555,7 @@ main { overflow: hidden; }
   max-width: 1080px;
   margin: 0 auto;
   background: #ece3d5;
-  border-radius: 16px;
+  border-radius: 0;
   padding: 48px;
   color: var(--color-panel);
 }
@@ -608,7 +609,7 @@ main { overflow: hidden; }
   font-family: var(--font-script);
   font-size: 20px;
   line-height: 1.3;
-  color: var(--color-accent);
+  color: #000;
   text-align: right;
 }
 .servicio__cta { margin-top: 32px; }
