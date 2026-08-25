@@ -554,7 +554,7 @@ main { overflow: hidden; }
   max-width: 1080px;
   margin: 0 auto;
   background: #ece3d5;
-  border-radius: 16px;
+  border-radius: 0;
   padding: 48px;
   color: var(--color-panel);
 }
