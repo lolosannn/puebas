@@ -255,12 +255,60 @@ main { overflow: hidden; }
 }
 .propuesta__title strong { font-weight: 700; }
 .propuesta__card {
-  display: flex;
-  gap: 40px;
-  background: #ece3d5;
+  position: relative;
   border-radius: 16px;
-  padding: 40px;
+  overflow: hidden;
   color: var(--color-panel);
+}
+.propuesta__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.propuesta__tabs {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(29,29,29,0.15);
+}
+.propuesta__tab {
+  flex: 1;
+  min-width: 180px;
+  padding: 18px 16px;
+  background: rgba(255,255,255,0.35);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-panel);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: background 0.2s, border-color 0.2s;
+}
+.propuesta__tab:hover { background: rgba(255,255,255,0.55); }
+.propuesta__tab.active {
+  background: rgba(255,255,255,0.7);
+  border-bottom-color: var(--color-accent);
+  color: var(--color-accent);
+}
+.propuesta__panel {
+  position: relative;
+  z-index: 1;
+  display: none;
+  gap: 40px;
+  padding: 40px;
+}
+.propuesta__panel.active { display: flex; }
+.propuesta__pending {
+  padding: 60px 0;
+  margin: 0 auto;
+  font-family: var(--font-body);
+  font-style: italic;
+  color: #6b6b6b;
+  text-align: center;
 }
 .propuesta__photo {
   flex: 0 0 380px;
@@ -269,20 +317,6 @@ main { overflow: hidden; }
   align-self: flex-start;
 }
 .propuesta__content { flex: 1; min-width: 0; }
-.propuesta__tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 24px;
-  margin-bottom: 20px;
-}
-.propuesta__tags span {
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: 13px;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  color: var(--color-accent);
-}
 .propuesta__badge {
   display: inline-block;
   font-family: var(--font-script);
@@ -307,8 +341,17 @@ main { overflow: hidden; }
 }
 .propuesta__menu p { margin: 0; }
 .propuesta__carnes { grid-column: 1 / -1; }
+.propuesta__note {
+  margin: 24px 0 0;
+  max-width: 420px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}
+.propuesta__note strong { color: var(--color-panel); }
 .propuesta__quote {
-  margin: 28px 0 8px;
+  margin: 20px 0 8px;
   font-family: var(--font-script);
   font-size: 20px;
   color: var(--color-accent);
@@ -322,6 +365,10 @@ main { overflow: hidden; }
   color: #555;
 }
 .propuesta__cta { margin-top: 48px; }
+
+@media (max-width: 760px) {
+  .propuesta__panel { flex-direction: column; }
+}
 
 /* ===== Nuestro Servicio ===== */
 .servicio {

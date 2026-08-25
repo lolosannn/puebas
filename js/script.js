@@ -52,6 +52,22 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// Propuesta Gastronómica tabs
+document.addEventListener('DOMContentLoaded', function () {
+  var tabs = document.querySelectorAll('.propuesta__tab');
+  var panels = document.querySelectorAll('.propuesta__panel');
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (t) { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+      panels.forEach(function (p) { p.classList.remove('active'); });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      var panel = document.querySelector('.propuesta__panel[data-panel="' + tab.dataset.tab + '"]');
+      if (panel) panel.classList.add('active');
+    });
+  });
+});
+
 // FAQ accordion
 document.addEventListener('DOMContentLoaded', function () {
   var faqItems = document.querySelectorAll('.faq-item');

@@ -91,47 +91,60 @@
       <h2 class="propuesta__title">Elegí como queres <strong>vivir el asado</strong></h2>
 
       <div class="propuesta__card">
-        <div class="ph propuesta__photo" data-asset="IMG_4925 — mesa servida"></div>
+        <div class="ph propuesta__bg" data-asset="fondo textura piedra"></div>
 
-        <div class="propuesta__content">
-          <div class="propuesta__tags">
-            <span>Experiencia asado completo</span>
-            <span>Experiencia finger food</span>
-            <span>Sumá experiencias a tu evento</span>
+        <div class="propuesta__tabs" role="tablist">
+          <button class="propuesta__tab active" type="button" role="tab" aria-selected="true" data-tab="completo">Experiencia asado completo</button>
+          <button class="propuesta__tab" type="button" role="tab" aria-selected="false" data-tab="fingerfood">Experiencia finger food</button>
+          <button class="propuesta__tab" type="button" role="tab" aria-selected="false" data-tab="eventos">Sumá experiencias a tu evento</button>
+        </div>
+
+        <div class="propuesta__panel active" data-panel="completo">
+          <div class="ph propuesta__photo" data-asset="IMG_4925 — mesa servida"></div>
+
+          <div class="propuesta__content">
+            <span class="propuesta__badge">Incluye</span>
+
+            <div class="propuesta__menu">
+              <div>
+                <h3>// Entrada</h3>
+                <p>Tabla completa de quesos y fiambres de primera calidad</p>
+              </div>
+              <div>
+                <h3>// Guarnición</h3>
+                <p>Papas fritas crocantes<br>Provoleta crocante por fuera y cremosa por dentro.</p>
+              </div>
+              <div>
+                <h3>// Ensaladas</h3>
+                <p>Zanahoria y huevo<br>Rúcula, parmesano y tomates cherrys</p>
+              </div>
+              <div>
+                <h3>// Acompañamientos</h3>
+                <p>Salsas caseras: criolla, chimichurri y provenzal.</p>
+              </div>
+              <div class="propuesta__carnes">
+                <h3>// Selección de carnes</h3>
+                <p>Mollejas doradas y crocantes, terminadas con limón fresco<br>
+                   Chorizo puro cerdo<br>
+                   Entraña a las brasas<br>
+                   Matambre de vaca a la pizza (salsa tomate casera, queso muzzarella, provolone y parmesano)<br>
+                   Asado del centro (5 costillas), cocción lenta de 4 horas<br>
+                   Vacío a fuego lento, a pura leña cocinado durante 4:30 horas</p>
+              </div>
+            </div>
+
+            <p class="propuesta__note">Una propuesta que respeta el <strong>ritual tradicional del asado argentino.</strong> El fuego como protagonista. Técnica, tiempo y producto en su máxima expresión.</p>
+            <p class="propuesta__quote">Cocción a leña de quebracho, respetando el tiempo y la esencia del fuego.</p>
+            <p class="propuesta__disclaimer">*Incluye pan figacita y miñón, leña seleccionada (quebracho colorado, blanco y espinillo) y materia prima de primera calidad. No incluye pan para celíacos.</p>
           </div>
+        </div>
 
-          <span class="propuesta__badge">Incluye</span>
+        <div class="propuesta__panel" data-panel="fingerfood">
+          <p class="propuesta__pending">Contenido pendiente de cargar desde el diseño de Figma.</p>
+        </div>
 
-          <div class="propuesta__menu">
-            <div>
-              <h3>// Entrada</h3>
-              <p>Tabla completa de quesos y fiambres de primera calidad</p>
-            </div>
-            <div>
-              <h3>// Guarnición</h3>
-              <p>Papas fritas crocantes<br>Provoleta crocante por fuera y cremosa por dentro.</p>
-            </div>
-            <div>
-              <h3>// Ensaladas</h3>
-              <p>Zanahoria y huevo<br>Rúcula, parmesano y tomates cherrys</p>
-            </div>
-            <div>
-              <h3>// Acompañamientos</h3>
-              <p>Salsas caseras: criolla, chimichurri y provenzal.</p>
-            </div>
-            <div class="propuesta__carnes">
-              <h3>// Selección de carnes</h3>
-              <p>Mollejas doradas y crocantes, terminadas con limón fresco<br>
-                 Chorizo puro cerdo<br>
-                 Entraña a las brasas<br>
-                 Matambre de vaca a la pizza (salsa tomate casera, queso muzzarella, provolone y parmesano)<br>
-                 Asado del centro (5 costillas), cocción lenta de 4 horas<br>
-                 Vacío a fuego lento, a pura leña cocinado durante 4:30 horas</p>
-            </div>
-          </div>
-
-          <p class="propuesta__quote">Cocción a leña de quebracho, respetando el tiempo y la esencia del fuego.</p>
-          <p class="propuesta__disclaimer">*Incluye pan figacita y miñón, leña seleccionada (quebracho colorado, blanco y espinillo) y materia prima de primera calidad. No incluye pan para celíacos.</p>
+        <div class="propuesta__panel" data-panel="eventos">
+          <p class="propuesta__pending">Contenido pendiente de cargar desde el diseño de Figma.</p>
         </div>
       </div>
 
